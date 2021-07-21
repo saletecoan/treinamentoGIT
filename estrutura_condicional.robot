@@ -56,8 +56,7 @@ Verificar Maior Idade
 
 Verificar Par ou Impar
     [Arguments]    @{Valor}
-    FOR    ${NÚMERO_ATUAL}    IN    @{Valor}
-	    ${Resultado}=    Evaluate    ${NÚMERO_ATUAL}%2    
+		    ${Resultado}=    Evaluate    ${NÚMERO_ATUAL}%2    
 	    IF  '${Resultado}' == "0"
 		    Log To console    ...
 # só para separar o 1
